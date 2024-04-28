@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #3498db, #e74c3c, #1abc9c, #f39c12);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+    color: #fff;
+}
+/* este de aca fue para simular lineas */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#word-display {
+    font-size: 28px;
+    margin: 20px 0;
+    color: #1abc9c; /* Turquesa */
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#attempts {
+    font-weight: bold;
+    font-size: 24px;
+    color: #e74c3c; /* Rojo */
+}
+
+#used-letters {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3498db; /* Azul */
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #27ae60; /* Verde */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218c53; /* Verde oscuro al pasar el ratón */
+}
+
+#hangman-display {
+    margin-top: 20px;
+}
+
+#hangman-display img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#hangman-display img:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+}

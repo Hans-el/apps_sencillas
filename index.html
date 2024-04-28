@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Juego de Ahorcado</h1>
+        <div id="word-display"></div>
+        <p>Intentos restantes: <span id="attempts">6</span></p>
+        <p>Letras utilizadas: <span id="used-letters"></span></p>
+        <input type="text" id="guess-input" placeholder="Tipea una letra">
+        <button onclick="guessLetter()">Adivinar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
